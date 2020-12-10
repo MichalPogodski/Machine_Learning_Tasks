@@ -2,8 +2,8 @@ from sklearn import tree, linear_model, metrics, datasets, model_selection
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-def task_1(): #DecisionTreeClassifier logic AND
+#DecisionTreeClassifier logic AND
+def task_1():
     X = [[0, 0],
          [0, 1],
          [1, 0],
@@ -16,8 +16,8 @@ def task_1(): #DecisionTreeClassifier logic AND
     print(clf.predict([[1, 1]]))
 
 
-
-def task_2(): #DecisionTreeClassifier logic OR
+#DecisionTreeClassifier logic OR
+def task_2():
     X = [[0, 0],
          [0, 1],
          [1, 0],
@@ -34,8 +34,8 @@ def task_2(): #DecisionTreeClassifier logic OR
 
 
 
-
-def task_3(): #DecisionTreeClassifier BUING A CAR
+ #DecisionTreeClassifier BUING A CAR
+def task_3():
     dict_brand = {'VW': 0, 'Ford': 1, 'Opel': 2}
     dict_damaged = {'yes': 0, 'no': 1}
 
@@ -69,8 +69,8 @@ def task_3(): #DecisionTreeClassifier BUING A CAR
 
 
 
-
-def task_4(): #Confusion matrix for DecisionTreeClassifier on 'digits' dataset
+ #Confusion matrix for DecisionTreeClassifier on 'digits' dataset
+def task_4():
     digits = datasets.load_digits()
 
     X_train, X_test, y_train, y_test = model_selection.train_test_split(
@@ -93,12 +93,14 @@ def task_4(): #Confusion matrix for DecisionTreeClassifier on 'digits' dataset
 
 
 
+
 def print_regressor_score(y1, y2):
     print('mean_absolute_error: ', metrics.mean_absolute_error(y1, y2))
     print('mean_squared_error: ', metrics.mean_squared_error(y1, y2))
     print('r2_score: ', metrics.r2_score(y1, y2), '\n')
 
 
+# Battery charging problem with DecisionTreeRegressor and LinearRegression
 def task_5():
     data = np.loadtxt(fname='./battery_data.csv', delimiter=',')
 

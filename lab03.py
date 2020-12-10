@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mlxtend.plotting import plot_decision_regions
 
+
+# Dtst preprocessing; MinMaxScaler
 def task_1():
 
     def plot_irs(X):
@@ -35,7 +37,9 @@ def task_1():
     plt.show()
 
 
-
+# Data normalization,
+# comparison of classifiers,
+# GridSearch.
 def main_task():
     iris = datasets.load_iris()
     X, y = iris.data, iris.target

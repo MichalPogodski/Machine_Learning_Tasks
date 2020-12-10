@@ -19,6 +19,7 @@ def task_0():
     pickle.load(open('./clf.p', 'rb'))
 
 
+# Reviewing Olivetti faces dtst
 def task_4():
     faces = datasets.fetch_olivetti_faces()
     print(faces) #, '\n', faces.DESCR, '\n', faces.data, '\n', faces.target)
@@ -26,6 +27,7 @@ def task_4():
     print(y)
 
 
+# Reviewing Boston dtst
 def task_5():
     from sklearn.datasets import load_boston
     boston = load_boston()
@@ -36,6 +38,7 @@ def task_5():
     print(boston['feature_names'])
 
 
+# dtst classification
 def task_6():
     x, y = datasets.make_classification(
         n_samples=100,
@@ -57,7 +60,8 @@ def task_6():
     plt.show()
 
 
-
+# Fetch dataset from openml by dataset id.
+# Reviewing Diabetes dtst
 def task_7():
     d = datasets.fetch_openml(data_id=40536, as_frame=True)
     print(type(d))
@@ -66,6 +70,8 @@ def task_7():
     print(diabetes.frame.head(5))
 
 
+
+# Simple linear regressor for battery charging problem
 def final_Boss():
 
     def regressor_9000(x: float) -> float:
@@ -89,10 +95,12 @@ def final_Boss():
     plt.scatter(x, y_predicted, marker='*', c='r')
     plt.show()
 
+
+
 if __name__ == '__main__':
     # task_0()
     # task_4()
     # task_5()
     # task_6()
-    # task_7()
-    final_Boss()
+    task_7()
+    # final_Boss()

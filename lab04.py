@@ -13,7 +13,7 @@ def plot_irs_3d(X, y):
     ax.scatter(X[:, 0], X[:, 1], X[:, 2], c=y)
 
 
-
+# KMeans for different number of clusters
 def task_1():
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
@@ -39,6 +39,8 @@ def task_1():
     plt.show()
 
 
+
+# KMeans for different number of clusters
 def task_2():
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
@@ -55,6 +57,8 @@ def task_2():
     plt.show()
 
 
+
+# Linear dimensionality reduction of dtst
 def task_3():
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
@@ -66,6 +70,8 @@ def task_3():
     plot_irs(X, y)
     plot_irs(X_r, y)
     plt.show()
+
+
 
 if __name__ == '__main__':
     # task_1()
