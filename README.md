@@ -1,5 +1,5 @@
 # Machine_Learning_Tasks
-##Set of quick Machine Learning tasks
+## Set of quick Machine Learning tasks
 
 ### lab01
 * Reviewing sklearn datasets.
